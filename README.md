@@ -59,7 +59,7 @@ pip install --ignore-installed --upgrade tensorflow
 [Cats & dogs dataset](https://s3-eu-west-1.amazonaws.com/training-dl/cats_dogs_sample.tar.gz)
 
 
-# Install and configure the Tensorflow object detection API
+# Install and configure the Tensorflow object detection API on windows
 
 Detailed instructions [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
 
