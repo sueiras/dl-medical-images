@@ -20,6 +20,11 @@ https://github.com/sueiras/training/blob/master/docs/aws.md
 
 https://github.com/sueiras/training/blob/master/docs/install_tensorflow_ubuntu_aws.md
 
+### AWS AMI for this course:
+- region: Ireland
+- AMI id: ami-8eb287f7
+- Name: sueiras-medical-images-02
+
 
 # Anaconda environment
 
