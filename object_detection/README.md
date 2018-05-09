@@ -10,24 +10,24 @@ To run this use case:
         ```
     - Download the pretrained modelfaster_rcnn_resnet101_coco 
         ```
-        wget http://storage.googleapis.com/download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_11_06_2017.tar.gz
-        tar -xvf faster_rcnn_resnet101_coco_11_06_2017.tar.gz
+        wget http://storage.googleapis.com/download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
+        tar -xvf faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
         ```
     
     
 - Create in the object_detection dir the next structure and copy the files
 ```
 <reseach>
-    train_faces.sh
-    eval_faces.sh
-    export_model_faces.sh
+    train_blood.sh
+    eval_blood.sh
+    export_model_blood.sh
     <object_detection>
         <data>
-            faces_label_map.pbtxt
-            <faces>
+            blood_label_map.pbtxt
+            <blood>
         <models>
-            <faces>
-                faster_rcnn_resnet101_faces.config
+            <blood>
+                faster_rcnn_inception_v2_coco.config
                 <train>
                 <eval>
 ```
@@ -35,6 +35,6 @@ To run this use case:
 - Convert the database to TFRecords whit the notebook Convert_annotated_images_into_TFRecords.ipynb
 
 
-- Execute the train_faces.sh to train the model.
-- Simultaneously execute eval_faces.sh to stat the evaluatoin proccess. 
-- Start the tensorboard over the models dir to follow the 
+- Execute the train_blood.sh to train the model.
+- Simultaneously, in other terminal, execute eval_blood.sh to start the evaluation proccess. 
+- In another terminal start the tensorboard over the models dir to follow the training and evaluation processes
